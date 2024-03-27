@@ -23,7 +23,7 @@ struct MyWindowHandler {
 impl WindowHandler for MyWindowHandler {
     fn on_draw(&mut self, helper: &mut WindowHelper, graphics: &mut Graphics2D) {
         // Clear screen
-        graphics.clear_screen(Color::from_rgb(0.8, 0.9, 1.0));
+        graphics.clear_screen(Color::from_rgb(0.0, 0.0, 0.0));
         
         self.p.update();
         self.p.draw(graphics);
